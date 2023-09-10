@@ -1,15 +1,15 @@
 {
-  "name": "solid",
-  "version": "1.0.0",
-  "description": "Solid Template",
-  "author": "Pasquale Vitiello <pasqualevitiello@gmail.com>",
+  "name": "punit",
+  "version": "7.0.0",
+  "description": "Punit",
+  "author": "Punit Kaswan>",
   "license": "GPLv3",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/pasqualevitiello/solid.git"
+    "url": "https://github.com/punitkaswan/punit1"
   },
   "bugs": {
-    "url": "https://bitbucket.org/pasqualevitiello/solid/issues"
+    "url": "https://github.com/punitkaswan/punit1"
   },
   "scripts": {
     "clean": "rimraf dist/{css/*,js/*,images/*}",
@@ -49,6 +49,6 @@
     "stylelint": "^9.4.0",
     "uglify-es": "^3.3.10"
   },
-  "homepage": "https://bitbucket.org/pasqualevitiello/solid#readme",
+  "homepage": "https://github.com/punitkaswan/punit1",
   "main": ".eslintrc.js"
 }

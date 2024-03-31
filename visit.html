@@ -10,16 +10,31 @@
     <p id="visitorCount">Loading...</p>
 
     <script>
-        // Fetch visitor count from API
-        fetch('https://punit.punit.eu.org/visi.txt')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('visitorCount').innerText = data.count;
-            })
-            .catch(error => {
-                console.error('Error fetching visitor count:', error);
-                document.getElementById('visitorCount').innerText = 'Loading...';
-            });
+        // Function to fetch visitor count from file
+        function fetchVisitorCount() {
+            // Create a new XMLHttpRequest object
+            var xhttp = new XMLHttpRequest();
+            
+            // Define the function to handle the response
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Parse the response text as an integer
+                    var count = parseInt(this.responseText.trim());
+                    
+                    // Display the visitor count
+                    document.getElementById('visitorCount').textContent = count;
+                }
+            };
+            
+            // Open a GET request to the file
+            xhttp.open("GET", "visit.txt", true);
+            
+            // Send the request
+            xhttp.send();
+        }
+
+        // Call the function to fetch visitor count when the page loads
+        window.onload = fetchVisitorCount;
     </script>
 </body>
 </html>

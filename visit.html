@@ -11,14 +11,14 @@
 
     <script>
         // Fetch visitor count from API
-        fetch('https://punit.punit.eu.org/count.txt')
+        fetch('https://punit.punit.eu.org/visi.txt')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('visitorCount').innerText = data.count;
             })
             .catch(error => {
                 console.error('Error fetching visitor count:', error);
-                document.getElementById('visitorCount').innerText = 'Error fetching count';
+                document.getElementById('visitorCount').innerText = 'Loading...';
             });
     </script>
 </body>

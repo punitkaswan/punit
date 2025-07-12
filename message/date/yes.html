@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Date</title>
+    <style>
+      .date-picker-container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Yeeyy! Finally</h1>
+      </div>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/wTDG30TB/yes.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      <button class="btn" id="yesButton" onclick="openDatePicker()">
+        Let's Fix a Date
+      </button>
+
+      <div class="date-picker-container" id="datePickerContainer">
+        <form id="myForm"  action="https://formsubmit.co/date@ms7group.eu.org" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://punit.eu.org">
+          <label for="location" placeholder="If you know any." >Location:</label>
+          <input type="text" id="location" name="Location">
+          <label for="chosenDate">Choose a Date:</label>
+          <input type="date" id="chosenDate" name="Date" required>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      function openDatePicker() {
+        var datePickerContainer = document.getElementById("datePickerContainer");
+        datePickerContainer.style.display = "block";
+      }
+
+      function submitDate(event) {
+        event.preventDefault();
+
+        var chosenDate = document.getElementById("chosenDate").value;
+        // You can perform further actions with the chosen date, such as sending it through a POST request.
+
+        // For demonstration purposes, log the chosen date to the console.
+        console.log("Chosen Date:", chosenDate);
+
+        // You can hide the date picker after submitting the date.
+        var datePickerContainer = document.getElementById("datePickerContainer");
+        datePickerContainer.style.display = "none";
+      }
+    </script>
+<script type="8e34c5fc78651502ee1b02c0-text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("myForm");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const formData = new FormData(form);
+      const xhr = new XMLHttpRequest();
+      xhr.open("POST", form.action);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          form.reset();
+          const successMessage = document.createElement("div");
+          successMessage.textContent = "Your message was sent successfully. !";
+          successMessage.style.color = "green";
+          form.parentNode.insertBefore(successMessage, form.nextSibling);
+         // form.style.display = "none"; // Hide the form
+          setTimeout(function() {
+            successMessage.parentNode.removeChild(successMessage);
+          }, 5000); // Remove message after 5 seconds (5000 milliseconds)
+        } else {
+          const failMessage = document.createElement("div");
+          failMessage.textContent = "There was a problem submitting your message.";
+          failMessage.style.color = "red";
+          form.parentNode.insertBefore(failMessage, form.nextSibling);
+          
+          setTimeout(function() {
+            failMessage.parentNode.removeChild(failMessage);
+          }, 3000); // Remove message after 3 seconds (3000 milliseconds)
+        }
+        
+      };
+      xhr.send(formData);
+    });
+  });
+  </script>
+
+
+  </body>
+</html>

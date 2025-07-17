@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Coming Soon | Punit Kaswan</title>
+  <title>Coming Soon | Rajasthan Style</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Marcellus&display=swap');
 
@@ -13,20 +13,44 @@
       box-sizing: border-box;
     }
 
-    body {
+    body, html {
+      height: 100%;
       font-family: 'Rajdhani', sans-serif;
-      color: #fff;
-      background: linear-gradient(to bottom, #e07b39, #c1440e);
-      height: 100vh;
       overflow: hidden;
-      position: relative;
-      text-align: center;
+    }
+
+    /* Video Background */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Overlay to make content readable */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+      z-index: 0;
     }
 
     .container {
       position: relative;
-      top: 50%;
-      transform: translateY(-50%);
+      z-index: 1;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
       padding: 2rem;
     }
 
@@ -35,6 +59,7 @@
       font-family: 'Marcellus', serif;
       color: #ffeccc;
       margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #000;
     }
 
     .illustration {
@@ -46,13 +71,15 @@
       font-size: 2rem;
       margin: 1.5rem 0;
       font-weight: bold;
+      color: #f8d774;
+      text-shadow: 1px 1px 3px #000;
     }
 
     .tagline {
       font-size: 1.2rem;
       font-style: italic;
       margin-bottom: 1rem;
-      color: #f9d56e;
+      color: #f9eab3;
     }
 
     .music-toggle {
@@ -60,11 +87,11 @@
       cursor: pointer;
       background: #fff3cd;
       color: #854c0b;
-      padding: 0.5rem 1rem;
+      padding: 0.6rem 1.2rem;
       border: none;
       border-radius: 10px;
       font-weight: bold;
-      box-shadow: 0 0 8px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
 
     .footer {
@@ -73,6 +100,9 @@
       width: 100%;
       font-size: 0.9rem;
       color: #ffd;
+      text-align: center;
+      z-index: 1;
+      text-shadow: 1px 1px 2px #000;
     }
 
     @media (max-width: 600px) {
@@ -92,6 +122,16 @@
 </head>
 <body>
 
+  <!-- Background video -->
+  <video autoplay muted loop class="video-bg">
+    <source src="https://media.istockphoto.com/id/1058181752/video/beautiful-slow-motion-video-of-some-pigeons-flying-at-sunset-on-the-udaipur-city-palace.mp4?s=mp4-640x640-is&k=20&c=yPpAV-gDnrKPtu_KzfhWbiCyHwszBBZvsBzBdv5hznk=" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Main content -->
   <div class="container">
     <div class="illustration">🏜️ 🐪 🏰</div>
     <h1>✨ कुछ खास आ रियो है... ✨</h1>
@@ -101,9 +141,10 @@
   </div>
 
   <div class="footer">
-    &copy; 2025<a href="https://instagram.com/punitkaswan7"><b>Punit Kaswan</b></a> | Made with ❤️ in Rajasthan
+    &copy; 2025 Desert Web Studios | Made with ❤️ in Rajasthan
   </div>
 
+  <!-- Optional Rajasthani folk music -->
   <audio id="folkMusic" loop>
     <source src="https://cdn.pixabay.com/download/audio/2023/03/05/audio_fdbf36acbb.mp3?filename=rajasthan-folk-140171.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Punit Kaswan</title>
+  <link rel="icon" href="assets/faviconblack.png" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+ <!-- Loader -->
+  <div id="loading">
+    <div class="loading-text">पधारो सा...</div>
+    <div class="camel-walk">🐪 Loading Portfolio...</div>
+  </div>
+  
+ <!-- Navbar -->
+<nav class="fancy-navbar">
+  <div class="logo-container">
+    <a href="https://pk7.in"> <img src="assets/logowhite1.png" alt="Logo" id="logo" /></a>
+  </div>
+  <button id="menu-toggle" class="toggle-btn">☰</button> <!-- outside logo-container -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">🏠 Home</a></li>
+    <li><a href="about.html">🧑‍💼 About</a></li>
+    <li><a href="projects.html">💼 Projects</a></li>
+    <li><a href="gallery.html" class="active">🖼️ Gallery</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero gallery-hero">
+  <div class="hero-content">
+    <h1>🎨 My Creative Gallery</h1>
+    <p class="subtitle">Snapshots of my coding & college journey 📸</p>
+  </div>
+</section>
+
+
+<!-- Gallery Grid -->
+<section class="gallery-grid">
+    <div class="gallery-item">
+    <img src="assets/gallery1.png" alt="Hackathon">
+    <div class="caption">🏆 Hackathon Victory</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/gallery2.png" alt="Presentation">
+    <div class="caption">💻 Final Year Project</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/gallery3.png" alt="Coding">
+    <div class="caption">☕ Late Night Debugging</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/gallery4.png" alt="Certificate">
+    <div class="caption">🎓 Course Certificate</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/gallery5.png" alt="Code">
+    <div class="caption">👨‍💻 Open Source Contribution</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/gallery6.png" alt="UI Design">
+    <div class="caption">🎨 UI/UX Mockup</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/portfolio.png" alt="Portfolio">
+    <div class="caption">🏆 Portfolio Website</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/verify.png" alt="Certificate Verification">
+    <div class="caption">💻 Certificate Verification Website</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/notes.png" alt="Text to HandWriting">
+    <div class="caption">☕ Text to HandWriting Website</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/qr.png" alt="R Generator">
+    <div class="caption">🎓 QR Generator Website</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/jecrc.png" alt="Assignment">
+    <div class="caption">👨‍💻 Assignment Website</div>
+  </div>
+  <div class="gallery-item">
+    <img src="assets/ai.png" alt="AI Chatbot">
+    <div class="caption">🎨 AI Chatbot Website</div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+  <div class="contact-card">
+    <h2>📬 Want to Collaborate?</h2>
+    <form action="https://formsubmit.co/contact@ms7group.eu.org" method="POST" enctype="multipart/form-data" id="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="success.html">
+
+      <div class="form-group">
+        <input type="text" name="name" id="name" required />
+        <label for="name">Your Name *</label>
+      </div>
+
+      <div class="form-group">
+        <input type="email" name="email" id="email" required />
+        <label for="email">Your Email *</label>
+      </div>
+
+      <div class="form-group">
+        <input type="file" name="file" id="file" />
+        <label for="file" class="file-label">Upload File</label>
+      </div>
+
+      <div class="form-group">
+        <textarea name="message" id="message" rows="5" required></textarea>
+        <label for="message">Your Message...</label>
+      </div>
+
+      <button type="submit" class="btn-submit">Send Message 🚀</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="fancy-footer">
+  <div class="footer-grid">
+    
+    <!-- Branding + Social Icons -->
+    <div class="footer-brand">
+     <a href="https://pk7.in"><img src="assets/logowhite1.png" id="footer-logo" alt="Footer Logo" /></a> 
+      <p>Code ✦ Culture ✦ Creativity</p>
+      <div class="social-row">
+        <!-- Instagram -->
+        <a href="https://instagram.com/punitkaswan7" target="_blank" title="Instagram">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3h10zm-5 3a5 5 0 1 0 .001 10.001A5 5 0 0 0 12 7zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm4.5-.75a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5z"/></svg>
+        </a>
+
+        <!-- Twitter/X -->
+        <a href="https://x.com/punitkaswan7" target="_blank" title="Twitter (X)">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M22.46 2H1.54L9.9 12 1.54 22h3.2l8.36-10L4.74 2h17.72l-8.36 10 8.36 10h-3.2L14.1 12 22.46 2z"/></svg>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/punitkaswan7" target="_blank" title="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0H12v2.34c.68-1.12 2.44-2.34 4.5-2.34 4 0 5 2.42 5 5.57V24h-5v-8.23c0-2.05-.03-4.69-2.86-4.69-2.87 0-3.3 2.23-3.3 4.53V24H7.5V8z"/></svg>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/punitkaswan" target="_blank" title="GitHub">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2.2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1 1.6 1 .9 1.6 2.3 1.2 2.9.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.2 11.2 0 0 1 6 0C17.6 4.7 18.6 5 18.6 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.2 0 4.6-2.7 5.6-5.3 5.9.4.3.7 1 .7 2v3c0 .4.2.7.8.6a10.9 10.9 0 0 0 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+
+        <!-- Gmail -->
+        <a href="mailto:pk@pk7.in" title="Email">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 13.5 2 6.75V18h20V6.75L12 13.5zm0-2.25L22 4H2l10 7.25z"/></svg>
+        </a>
+
+        <!-- Website -->
+        <a href="https://pk7.in" target="_blank" title="Website">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 18v-2h-2v2a8 8 0 0 1 2 0zm6.9-2.6l-1.4-1.4a7.98 7.98 0 0 1-1.6 1.6l1.4 1.4a10.02 10.02 0 0 0 1.6-1.6zM4 12a8 8 0 0 1 8-8v2h2V4a8 8 0 0 1 0 16v-2h-2v2a8 8 0 0 1-8-8zm2.1 4.6l1.4-1.4a7.98 7.98 0 0 1 1.6 1.6l-1.4 1.4a10.02 10.02 0 0 0-1.6-1.6z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+    </div>
+
+    <!-- Live Info -->
+    <div class="footer-info">
+      <h4>Live Info</h4>
+      <p><b>📍 IP: </b><span id="ip">Loading</span></p>
+      <p><b>🕰️ Last Update: </b><span id="last-update"></span></p>
+      <p><b>📅 Date/Time: </b><span id="datetime"></span></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> <a href="https://instagram.com/punitkaswan7"><b>Punit Kaswan</b></a> | Made with ❤️ from Rajasthan</p>
+  </div>
+</footer>
+
+<!-- Floating Contact -->
+<a href="mailto:pk@pk7.in" class="chat-btn" title="Email Me">💌</a>
+</body>
+</html>

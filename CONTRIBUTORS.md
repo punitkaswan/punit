@@ -7,9 +7,9 @@ Thanks to these awesome people for contributing to this project! ❤️
 | Name             | GitHub Username    | Role/Contribution           |
 |------------------|--------------------|-----------------------------|
 | Punit Kaswan     | [@punitkaswan](https://github.com/punitkaswan) | Creator & Maintainer        |
-| Jane Doe         | [@janedoe](https://github.com/janedoe)         | Design feedback, docs       |
-| John Dev         | [@johnDev123](https://github.com/johnDev123)   | Bug reporting, ideas        |
-| Priya Sharma     | [@priyasharma](https://github.com/priyasharma) | Code cleanup, UI polish     |
+| Coming Soon      | [@github](https://github.com/github)           | Design feedback, docs       |
+| Coming Soon      | [@github](https://github.com/github)           | Bug reporting, ideas        |
+| Coming Soon      | [@github](https://github.com/github)           | Code cleanup, UI polish     |
 
 ---
 

@@ -171,9 +171,10 @@
 <section class="contact-section" id="contact">
   <div class="contact-card">
     <h2>📬 Contact Me</h2>
-    <form action="https://formsubmit.co/contact@ms7group.eu.org" method="POST" enctype="multipart/form-data" id="contact-form">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+      <input type="hidden" name="access_key" value="c9ffca38-5d27-4dff-bf93-caee70ff0434">
+      <input type="hidden" name="from_name" value="Contact Form">
+      <input type="hidden" name="subject" value="Submits at https://pk7.in">
 
       <div class="form-group">
         <input type="text" name="name" id="name" required />
@@ -185,11 +186,10 @@
         <label for="email">Your Email *</label>
       </div>
 
-      <div class="form-group">
+   <!--   <div class="form-group">
         <input type="file" name="file" id="file" />
         <label for="file" class="file-label">Upload File</label>
-        
-      </div>
+      </div>  -->
 
       <div class="form-group">
         <textarea name="message" id="message" rows="5"></textarea>

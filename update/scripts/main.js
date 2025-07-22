@@ -240,5 +240,43 @@ document.addEventListener('DOMContentLoaded', loadContributors);
 
 
 
+// Success Popup 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+    })
+    .then((res) => {
+      if (res.ok) {
+        showSuccessPopup();
+        form.reset();
+      } else {
+        alert("❌ Something went wrong. Please try again.");
+      }
+    })
+    .catch(() => alert("❌ Failed to send message. Try again later."));
+  });
+});
+
+function showSuccessPopup() {
+  const popup = document.getElementById("success-popup");
+  popup.classList.remove("hidden");
+
+  setTimeout(() => {
+    closeSuccessPopup();
+  }, 3000); // Auto-close after 3 sec
+}
+
+function closeSuccessPopup() {
+  document.getElementById("success-popup").classList.add("hidden");
+}
+
 
 

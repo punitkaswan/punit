@@ -174,7 +174,6 @@
     <form action="https://formsubmit.co/contact@ms7group.eu.org" method="POST" id="contact-form">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://pk7.in/success.html">
 
       <div class="form-group">
         <input type="text" name="name" id="name" required />
@@ -202,6 +201,20 @@
   </div>
 </section>
 
+<!-- Success Popup (initially hidden) -->
+<div id="success-popup" class="success-popup hidden">
+  <div class="success-card">
+    <button class="close-btn" onclick="closeSuccessPopup()">×</button>
+    <h1>🎉 धन्यवाद सा!</h1>
+    <blockquote class="quote">"आपकी बात पहुँच चुकी है, मैं जल्दी ही जवाब दूंगा!"</blockquote> 
+    <h2>📬 Message Sent Successfully</h2>
+    <img src="assets/camel.jpeg" alt="Thank You Camel" class="decor-img" />
+    <div class="btn-group">
+      <a href="index.html" class="btn">🏡 मुख्यपृष्ठ</a>
+      <a href="#contact" class="btn">📩 दूसरा संदेश भेजें</a>
+    </div>
+  </div>
+</div>
 
   <!-- Footer -->
 <footer class="fancy-footer">

@@ -269,9 +269,9 @@ function showSuccessPopup() {
   const popup = document.getElementById("success-popup");
   popup.classList.remove("hidden");
 
-  setTimeout(() => {
+ setTimeout(() => {
     closeSuccessPopup();
-  }, 3000); // Auto-close after 3 sec
+  }, 10000); // Auto-close after 10 sec
 }
 
 function closeSuccessPopup() {

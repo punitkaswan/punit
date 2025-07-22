@@ -91,14 +91,14 @@
   </div>
 </section>
 
-<!-- Contact Section -->
+ <!-- Contact Section -->
 <section class="contact-section" id="contact">
   <div class="contact-card">
-    <h2>📬 Want to Collaborate?</h2>
-    <form action="https://formsubmit.co/contact@ms7group.eu.org" method="POST" enctype="multipart/form-data" id="contact-form">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_next" value="https://pk7.in/success.html">
+    <h2>📬 Contact Me</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+      <input type="hidden" name="access_key" value="c9ffca38-5d27-4dff-bf93-caee70ff0434">
+      <input type="hidden" name="from_name" value="Contact Form">
+      <input type="hidden" name="subject" value="Submits at https://pk7.in/gallery">
 
       <div class="form-group">
         <input type="text" name="name" id="name" required />
@@ -106,17 +106,17 @@
       </div>
 
       <div class="form-group">
-        <input type="email" name="email" id="email" required />
+        <input type="email" name="email" id="email"  required />
         <label for="email">Your Email *</label>
       </div>
 
-      <div class="form-group">
+   <!--   <div class="form-group">
         <input type="file" name="file" id="file" />
         <label for="file" class="file-label">Upload File</label>
-      </div>
+      </div>  -->
 
       <div class="form-group">
-        <textarea name="message" id="message" rows="5" required></textarea>
+        <textarea name="message" id="message" rows="5"></textarea>
         <label for="message">Your Message...</label>
       </div>
 
@@ -124,6 +124,21 @@
     </form>
   </div>
 </section>
+
+  <!-- Success Popup (initially hidden) -->
+<div id="success-popup" class="success-popup hidden">
+  <div class="success-card">
+    <button class="close-btn" onclick="closeSuccessPopup()">×</button>
+    <h1>🎉 धन्यवाद सा!</h1>
+    <blockquote class="quote">"आपकी बात पहुँच चुकी है, मैं जल्दी ही जवाब दूंगा!"</blockquote> 
+    <h2>📬 Message Sent Successfully</h2>
+    <img src="assets/camel.jpeg" class="decor-img" alt="Thank You Camel"/>
+    <div class="btn-group">
+  <!--    <a href="#contact" class="btn">📩 दूसरा संदेश भेजें</a> -->
+    </div>
+  </div>
+</div>
+
 
 
 <!-- Footer -->

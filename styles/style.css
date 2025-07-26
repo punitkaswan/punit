@@ -1715,7 +1715,7 @@ body.loaded #loading {
     transparent 20px
   );
   height: 100%;
-  min-height: 850px;
+  min-height: 1000px;
   margin-right: 60px;
   border-radius: 4px;
 }

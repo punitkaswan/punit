@@ -7,14 +7,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
-    body {display: flex; justify-content: center; align-items: center; height: 100vh; color: #fff; text-align: center; overflow: hidden; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);} 
-    .container {animation: fadeIn 2s ease-in-out; padding: 2rem; border-radius: 20px; max-width: 600px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); box-shadow: 0 0 25px rgba(0,255,255,0.5);} 
+    body {display: flex; justify-content: center; align-items: center; height: 100vh; color: #fff; text-align: center; overflow: hidden; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 1rem;} 
+    .container {animation: fadeIn 2s ease-in-out; padding: 2rem; border-radius: 20px; max-width: 90%; width: 600px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); box-shadow: 0 0 25px rgba(0,255,255,0.5);} 
 
-    h1 {font-size: 3rem; margin-bottom: 1rem; color: #00fff7; text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; white-space: nowrap; overflow: hidden; border-right: 3px solid #00fff7; width: 0; animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;} 
-    p {font-size: 1.2rem; margin-bottom: 2rem;}
+    h1 {font-size: 2rem; margin-bottom: 1rem; color: #00fff7; text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; white-space: nowrap; overflow: hidden; border-right: 3px solid #00fff7; width: 0; animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;} 
+    p {font-size: 1rem; margin-bottom: 2rem; line-height: 1.5;} 
     a {display: inline-block; padding: 12px 25px; font-size: 1rem; text-decoration: none; border-radius: 30px; background: #00fff7; color: #000; box-shadow: 0 0 15px #00fff7; transition: 0.3s; animation: pulse 2s infinite;} 
     a:hover {transform: scale(1.05);} 
-    footer {position: absolute; bottom: 20px; font-size: 0.9rem; opacity: 0.7;} 
+    footer {position: absolute; bottom: 10px; font-size: 0.8rem; opacity: 0.7; text-align: center; width: 100%; padding: 0 10px;} 
 
     @keyframes fadeIn {from { opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}}
     @keyframes typing {from {width: 0;} to {width: 100%;}}
@@ -22,13 +22,25 @@
     @keyframes pulse {0%, 100% {box-shadow: 0 0 15px #00fff7;} 50% {box-shadow: 0 0 25px #00fff7;}}
 
     /* Floating glowing particles */
-    .particle {position: absolute; border-radius: 50%; background: rgba(0,255,255,0.3); animation: float 8s infinite ease-in-out;}
-    .particle:nth-child(1) {width: 120px; height: 120px; top: 10%; left: 15%; animation-delay: 0s;}
-    .particle:nth-child(2) {width: 80px; height: 80px; bottom: 20%; right: 15%; animation-delay: 2s;}
-    .particle:nth-child(3) {width: 60px; height: 60px; top: 40%; right: 25%; animation-delay: 4s;}
-    .particle:nth-child(4) {width: 100px; height: 100px; bottom: 10%; left: 20%; animation-delay: 6s;}
+    .particle {position: absolute; border-radius: 50%; background: rgba(0,255,255,0.3); animation: float 8s infinite ease-in-out;} 
+    .particle:nth-child(1) {width: 80px; height: 80px; top: 10%; left: 15%; animation-delay: 0s;} 
+    .particle:nth-child(2) {width: 60px; height: 60px; bottom: 20%; right: 15%; animation-delay: 2s;} 
+    .particle:nth-child(3) {width: 40px; height: 40px; top: 40%; right: 25%; animation-delay: 4s;} 
+    .particle:nth-child(4) {width: 70px; height: 70px; bottom: 10%; left: 20%; animation-delay: 6s;} 
 
-    @keyframes float {0%, 100% {transform: translateY(0);} 50% {transform: translateY(-30px);} }
+    @keyframes float {0%, 100% {transform: translateY(0);} 50% {transform: translateY(-20px);} }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      h1 {font-size: 1.6rem;}
+      p {font-size: 0.9rem;}
+      a {font-size: 0.9rem; padding: 10px 20px;}
+    }
+    @media (max-width: 480px) {
+      h1 {font-size: 1.3rem; border-right: 2px solid #00fff7;}
+      p {font-size: 0.85rem;}
+      .container {padding: 1.5rem;}
+    }
   </style>
 </head>
 <body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Punit Kaswan | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {display: flex; justify-content: center; align-items: center; height: 100vh; color: #fff; text-align: center; overflow: hidden; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);} 
+    .container {animation: fadeIn 2s ease-in-out; padding: 2rem; border-radius: 20px; max-width: 600px; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); box-shadow: 0 0 25px rgba(0,255,255,0.5);} 
+
+    h1 {font-size: 3rem; margin-bottom: 1rem; color: #00fff7; text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7; white-space: nowrap; overflow: hidden; border-right: 3px solid #00fff7; width: 0; animation: typing 4s steps(30, end) forwards, blink 0.75s step-end infinite;} 
+    p {font-size: 1.2rem; margin-bottom: 2rem;}
+    a {display: inline-block; padding: 12px 25px; font-size: 1rem; text-decoration: none; border-radius: 30px; background: #00fff7; color: #000; box-shadow: 0 0 15px #00fff7; transition: 0.3s; animation: pulse 2s infinite;} 
+    a:hover {transform: scale(1.05);} 
+    footer {position: absolute; bottom: 20px; font-size: 0.9rem; opacity: 0.7;} 
+
+    @keyframes fadeIn {from { opacity: 0; transform: translateY(20px);} to {opacity: 1; transform: translateY(0);}}
+    @keyframes typing {from {width: 0;} to {width: 100%;}}
+    @keyframes blink {50% {border-color: transparent;}}
+    @keyframes pulse {0%, 100% {box-shadow: 0 0 15px #00fff7;} 50% {box-shadow: 0 0 25px #00fff7;}}
+
+    /* Floating glowing particles */
+    .particle {position: absolute; border-radius: 50%; background: rgba(0,255,255,0.3); animation: float 8s infinite ease-in-out;}
+    .particle:nth-child(1) {width: 120px; height: 120px; top: 10%; left: 15%; animation-delay: 0s;}
+    .particle:nth-child(2) {width: 80px; height: 80px; bottom: 20%; right: 15%; animation-delay: 2s;}
+    .particle:nth-child(3) {width: 60px; height: 60px; top: 40%; right: 25%; animation-delay: 4s;}
+    .particle:nth-child(4) {width: 100px; height: 100px; bottom: 10%; left: 20%; animation-delay: 6s;}
+
+    @keyframes float {0%, 100% {transform: translateY(0);} 50% {transform: translateY(-30px);} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🚧 Under Construction 🚧</h1>
+    <p>Hi, I'm <strong>Punit Kaswan</strong>. My personal portfolio is coming soon. Stay tuned!</p>
+    <a href="https://www.instagram.com/punitkaswan7" target="_blank">Follow Me on Instagram</a>
+  </div>
+  <footer>Designed by Punit Kaswan</footer>
+
+  <!-- Glowing particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</body>
+</html>

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punit Kaswan | Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <canvas id="particle-network" class="particle-network-bg"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">PK</span>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">
+                Hi, I'm <span class="highlight">Punit Kaswan</span>
+            </h1>
+            <p class="hero-subtitle slide-up">Java Developer & Creative Coder</p>
+            <p class="hero-description fade-in-delay">
+                Building robust, high-performance applications with clean, efficient code.
+                Passionate about creating elegant solutions to complex problems.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary pulse">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title slide-in-left">// About Me</h2>
+            <div class="about-content">
+                <div class="terminal-window slide-in-right">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">punit@kaswan: ~/about</div>
+                    </div>
+                    <div class="terminal-body">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat whoami.txt</span>
+                        </div>
+                        <div class="terminal-output">
+                            <p>I'm a passionate <span class="highlight-terminal">Java Developer</span> with a strong foundation in building scalable, high-performance applications.</p>
+                            <p>I combine academic excellence with practical coding skills to create elegant, efficient solutions.</p>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">./skills.sh</span>
+                        </div>
+                        <div class="terminal-output">
+                            <div class="skills-terminal">
+                                <span class="skill-tag-terminal">Java</span>
+                                <span class="skill-tag-terminal">HTML5</span>
+                                <span class="skill-tag-terminal">CSS3</span>
+                                <span class="skill-tag-terminal">JavaScript</span>
+                                <span class="skill-tag-terminal">React.js</span>
+                                <span class="skill-tag-terminal">Node.js</span>
+                                <span class="skill-tag-terminal">SQL</span>
+                                <span class="skill-tag-terminal">Git</span>
+                            </div>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">echo $EXPERTISE</span>
+                        </div>
+                        <div class="terminal-output">
+                            <p>> Backend development with Java and Node.js</p>
+                            <p>> Frontend technologies like React.js for full-stack solutions</p>
+                            <p>> Creating elegant, efficient code that solves real-world problems</p>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">./current_status.sh</span>
+                        </div>
+                        <div class="terminal-output">
+                            <p>> <span class="status-dot online"></span>Available for new opportunities</p>
+                            <p>> <span class="status-dot active"></span>Actively coding and learning</p>
+                        </div>
+                        <div class="terminal-line typing-cursor">
+                            <span class="prompt">$</span>
+                            <span class="cursor"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Journey Section -->
+    <section id="academic" class="academic-journey">
+        <div class="container">
+            <h2 class="section-title slide-in-left">// Academic Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker">🎓</div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science</h3>
+                        <h4>JECRC University, Jaipur</h4>
+                        <p class="timeline-date">2023 – 2027 (Expected)</p>
+                        <p>Currently pursuing undergraduate studies with focus on software engineering, data structures, and advanced programming concepts. Active participant in coding competitions and tech clubs.</p>
+                        <div class="timeline-highlights">
+                            <span>CGPA: 6.5+</span>
+                            <span>Coding Club Lead</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in" style="animation-delay: 0.2s;">
+                    <div class="timeline-marker">🏆</div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary Education</h3>
+                        <h4>Prince Academy, Sikar</h4>
+                        <p class="timeline-date">2020 – 2022</p>
+                        <p>Completed senior secondary with Physics, Chemistry, and Mathematics. Focused on building strong analytical and problem-solving foundations.</p>
+                        <div class="timeline-highlights">
+                            <span>70% Aggregate</span>
+                            <span>Science Stream</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in" style="animation-delay: 0.4s;">
+                    <div class="timeline-marker">📚</div>
+                    <div class="timeline-content">
+                        <h3>Primary & Secondary Education</h3>
+                        <h4>CGPS, Laxmangarh</h4>
+                        <p class="timeline-date">2009 – 2020</p>
+                        <p>Completed 10+2 years of schooling with distinction in Mathematics and Science. Developed early interest in computers and programming through school's computer lab initiatives.</p>
+                        <div class="timeline-highlights">
+                            <span>85% in Class 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond The Code Section -->
+    <section id="beyond" class="beyond-code">
+        <div class="container">
+            <h2 class="section-title slide-in-left">// Beyond The Code</h2>
+            <div class="beyond-grid">
+                <div class="beyond-card scale-in" style="animation-delay: 0.1s;">
+                    <div class="beyond-icon">🎓</div>
+                    <h3>Campus Ambassador</h3>
+                    <p class="beyond-organization">Geeks for Geeks · JECRC University</p>
+                    <p class="beyond-date">2026-27</p>
+                    <p>Leading technical workshops and coding bootcamps. Promoting competitive programming and technical excellence among students.</p>
+                </div>
+                <div class="beyond-card scale-in" style="animation-delay: 0.2s;">
+                    <div class="beyond-icon">🩸</div>
+                    <h3>Head — Aashayein</h3>
+                    <p class="beyond-organization">Social Initiative · JECRC University</p>
+                    <p class="beyond-date">2025-26</p>
+                    <p>Led blood and SDP donation drives, organized events, managed volunteers, and impacted 500+ lives through humanitarian efforts.</p>
+                </div>
+                <div class="beyond-card scale-in" style="animation-delay: 0.3s;">
+                    <div class="beyond-icon">🏈</div>
+                    <h3>Captain — American Football</h3>
+                    <p class="beyond-organization">JU Eagles · JECRC University</p>
+                    <p class="beyond-date">2025-26</p>
+                    <p>Captained the university's American Football team. Responsible for training, strategy, team morale, and representing the university in inter-college tournaments.</p>
+                </div>
+                <div class="beyond-card scale-in" style="animation-delay: 0.4s;">
+                    <div class="beyond-icon">🦅</div>
+                    <h3>Head — JU Eagles</h3>
+                    <p class="beyond-organization">Sports Club · JECRC University</p>
+                    <p class="beyond-date">2025-26</p>
+                    <p>Operation Head of the JU Eagles Core team, which organizing various sports tournaments at JECRC University.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title slide-in-left">// My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">💻</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>Portfolio Website</h3>
+                    <p class="project-issuer">Animated Portfolio</p>
+                    <p class="project-description">Animated personal portfolio showcasing Java development skills and leadership journey</p>
+                    <div class="project-actions">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">🌐</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>Aashayein Initiative's Website</h3>
+                    <p class="project-issuer">Student-Led Initiative </br>· JECRC University</p>
+                    <p class="project-description">A platform for blood and SDP donation; donors can register and patients can request blood/SDP</p>
+                    <div class="project-actions">
+                        <a href="https://aashayein.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">📊</div>
+                    <div class="project-status in-progress">In Progress</div>
+                    <h3>College Placement System</h3>
+                    <p class="project-issuer">College Project</p>
+                    <p class="project-description">A web-based platform for centralized placement management: students apply & view companies, management handles students & companies</p>
+                    <div class="project-actions">
+                        <a href="https://cps.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">🎓</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>College Student Pass/Fail Check System</h3>
+                    <p class="project-issuer">Academic Tool</p>
+                    <p class="project-description">Checks whether a student passed or failed; if failed, calculates required marks to pass</p>
+                    <div class="project-actions">
+                        <a href="https://ju.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.5s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">🔐</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>Certificate Verification System</h3>
+                    <p class="project-issuer">Aashayein Initiative</p>
+                    <p class="project-description">Verify certificates via QR/Unique ID, built for Aashayein Initiative</p>
+                    <div class="project-actions">
+                        <a href="https://verify.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.6s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">📱</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>QR Generator</h3>
+                    <p class="project-issuer">Utility Tool</p>
+                    <p class="project-description">Create instant QR codes for links and text with customizable options</p>
+                    <div class="project-actions">
+                        <a href="https://qr.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.239 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.7s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">📚</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>Assignment Website</h3>
+                    <p class="project-issuer">JECRC Students</p>
+                    <p class="project-description">A platform for students to access assignments, previous papers, and upload their work to help peers</p>
+                    <div class="project-actions">
+                        <a href="https://jecrc.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.8s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">🔗</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>GeeksForGeeks API</h3>
+                    <p class="project-issuer">Open Source</p>
+                    <p class="project-description">Fetch public GFG profile data as JSON for developers with caching</p>
+                    <div class="project-actions">
+                        <a href="https://gfg.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 0.9s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">📊</div>
+                    <div class="project-status completed">Completed</div>
+                    <h3>Google Sheets API</h3>
+                    <p class="project-issuer">Open Source</p>
+                    <p class="project-description">Open-source converter from Google Sheets to JSON API for easy data integration</p>
+                    <div class="project-actions">
+                        <a href="https://sheet.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card fade-in" style="animation-delay: 1.0s;">
+                    <div class="ribbon">★</div>
+                    <div class="project-icon">📧</div>
+                    <div class="project-status upcoming">Upcoming</div>
+                    <h3>Form Submit Website</h3>
+                    <p class="project-issuer">Custom Domain Integration</p>
+                    <p class="project-description">Website with form submission that sends emails directly to your inbox via custom domain configuration</p>
+                    <div class="project-actions">
+                        <a href="https://form.pk7.in" class="project-link">View Project</a>
+                        <a href="https://github.com/punitkaswan" target="_blank" class="project-github" aria-label="View GitHub Repository">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title slide-in-left">// Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card scale-in">
+                    <div class="ribbon">★</div>
+                    <div class="cert-icon">🏆</div>
+                    <h3>Oracle Certified Java Programmer</h3>
+                    <p class="cert-issuer">Oracle</p>
+                    <p class="cert-date">2024</p>
+                    <p class="cert-description">Professional-level certification for Java SE development</p>
+                </div>
+                <div class="cert-card scale-in" style="animation-delay: 0.2s;">
+                    <div class="ribbon">★</div>
+                    <div class="cert-icon">🎓</div>
+                    <h3>React.js Professional Certification</h3>
+                    <p class="cert-issuer">Meta (Facebook)</p>
+                    <p class="cert-date">2024</p>
+                    <p class="cert-description">Advanced React development and modern frontend architecture</p>
+                </div>
+                <div class="cert-card scale-in" style="animation-delay: 0.4s;">
+                    <div class="ribbon">★</div>
+                    <div class="cert-icon">⭐</div>
+                    <h3>AWS Certified Developer</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">2023</p>
+                    <p class="cert-description">Cloud development and deployment on AWS platform</p>
+                </div>
+                <div class="cert-card scale-in" style="animation-delay: 0.6s;">
+                    <div class="ribbon">★</div>
+                    <div class="cert-icon">🏅</div>
+                    <h3>Microsoft Azure Fundamentals</h3>
+                    <p class="cert-issuer">Microsoft</p>
+                    <p class="cert-date">2023</p>
+                    <p class="cert-description">Core cloud services and solutions on Azure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title slide-in-left">// Let's Connect</h2>
+        <div class="spaceship-form slide-in-up">
+            <div class="spaceship-window">
+                <div class="window-glow"></div>
+                <form class="contact-form-galaxy" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e9f03229-2471-4411-bc54-780bc4690440">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name" class="field-label">Your Name*</label>
+                            <input type="text" id="name" name="name" class="field-input" placeholder="Enter your name..." required>
+                            <div class="input-glow"></div>
+                        </div>
+                        <div class="form-field">
+                            <label for="email" class="field-label">Your Email*</label>
+                            <input type="email" id="email" name="email" class="field-input" placeholder="Enter your email..." required>
+                            <div class="input-glow"></div>
+                        </div>
+                    </div>
+                    <div class="form-field full-width">
+                        <label for="message" class="field-label">Message*</label>
+                        <textarea id="message" name="message" class="field-input field-textarea" placeholder="Type your message here..." rows="4" required></textarea>
+                        <div class="input-glow"></div>
+                    </div>
+                    <button type="submit" class="launch-button">
+                        <span class="button-text">Launch Message</span>
+                        <svg class="rocket-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2.5c-3.5 0-6.5 2-8 5 0 0-2 3-2 5 0 4 3 7 5 9 2 2 5 2 8 0 2-2 5-5 5-9 0-2-2-5-2-5-1.5-3-4.5-5-8-5z"/>
+                            <path d="M12 8.5c-1.5 0-2.8.6-3.6 1.6"/>
+                            <path d="M12 13.5c-.8 0-1.5-.3-1.9-.8"/>
+                        </svg>
+                        <div class="button-particles"></div>
+                    </button>
+                </form>
+            </div>
+            <div class="spaceship-fin left"></div>
+            <div class="spaceship-fin right"></div>
+            <div class="spaceship-engine">
+                <div class="flame"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <p class="footer-tagline">Crafted with ❤️ by <a href="https://www.instagram.com/punitkaswan7/" target="_blank" rel="noopener noreferrer" class="footer-instagram-link">Punit Kaswan</a></p>
+                <p class="footer-copy">&copy; 2026 All rights reserved.</p>
+            </div>
+
+            <div class="footer-social">
+                <!-- Instagram -->
+                <a href="https://instagram.com/punitkaswan7" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-platform="instagram">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.354 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+
+                <!-- X / Twitter -->
+                <a href="https://x.com/punitkaswan7" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" data-platform="x">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M18.244 2H21l-6.56 7.49L22.5 22h-6.63l-5.2-6.8L4.7 22H2l7.02-8.02L1.5 2h6.77l4.7 6.2L18.24 2zm-2.32 18h1.85L7.66 4H5.64l10.28 16z"/>
+</svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/punitkaswan7" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-platform="linkedin">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.499 0-2.485-1.162-2.485-2.932 0-1.765 1.034-2.932 2.485-2.932 1.499 0 2.485 1.167 2.485 2.932 0 1.765-1.034 2.932-2.485 2.932zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/punitkaswan" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-platform="github">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                    </svg>
+                </a>
+
+                <!-- Gmail -->
+                <a href="mailto:pk@pk7.in" class="social-link" aria-label="Gmail" data-platform="gmail">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </a>
+
+                <!-- External Link -->
+                <a href="https://github.com/punitkaswan?tab=repositories" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="View All Projects" data-platform="external">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V9h3V3h-7z"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-visitor">
+                <div class="last-updated" id="last-updated">
+                    <span class="update-icon">📅</span>
+                    <span class="update-text">Last Updated: <span id="last-update-date" class="update-date">31/03/2026</span></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="floating-btn" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

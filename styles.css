@@ -1477,38 +1477,6 @@ section {
     }
 }
 
-/* Contact Section */
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-    }
-}
-
-    .terminal-body {
-        padding: 1rem;
-        font-size: 0.85rem;
-        min-height: 350px;
-    }
-
-    .terminal-output {
-        margin-left: 1.5rem;
-    }
-
-    .terminal-header {
-        padding: 0.6rem 0.8rem;
-    }
-
-    .terminal-title {
-        font-size: 0.8rem;
-    }
-
-    .skill-tag-terminal {
-        padding: 0.3rem 0.7rem;
-        font-size: 0.8rem;
-    }
-}
 
 /* ============================================
    Contact Section - Space Theme

@@ -38,7 +38,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 0.7rem 0;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -2256,10 +2256,6 @@ section {
         width: 20px;
         height: 20px;
     }
-
-    .scroll-indicator {
-        display: none;
-    }
 }
 
 /* Medium Devices (tablets, 769px to 1024px) */
@@ -2349,10 +2345,6 @@ section {
 @media (orientation: landscape) and (max-height: 600px) {
     .hero {
         min-height: 80vh;
-    }
-
-    .scroll-indicator {
-        display: none;
     }
 }
 

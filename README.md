@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website with stunning animations, designed specifically for Java Developer & Creative Coder, Punit Kaswan.
 
-🌐 **Live Demo**: [Your portfolio URL here]
+🌐 **Live Demo**: https://pk7.in
 
 ---
 
